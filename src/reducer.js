@@ -1,7 +1,7 @@
 import { users } from "./mock";
 
 export const reduder = (state, action) => {
-    switch (action.type) {
+    switch (action.type)  {
         // hendling multiple inputes
         case 'GET_INPUT-VALUE':
             return { ...state, [action.payload.inputName]: action.payload.value };
